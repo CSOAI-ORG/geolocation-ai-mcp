@@ -1,0 +1,10 @@
+name: geolocation-ai-mcp
+description: "MEOK AI Labs — geolocation-ai-mcp"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/geolocation-ai-mcp
+license: MIT
+categories: [Location, Mapping]
+tags: [geolocation, geocoding, maps, coordinates, location-services, gis]
+runtime: python
+entrypoint: server.py
