@@ -1,10 +1,40 @@
 name: geolocation-ai-mcp
-description: "MEOK AI Labs — geolocation-ai-mcp"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/geolocation-ai-mcp
-license: MIT
-categories: [Location, Mapping]
-tags: [geolocation, geocoding, maps, coordinates, location-services, gis]
-runtime: python
-entrypoint: server.py
+description: "geolocation-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)"
+version: 1.0.0
+tools:
+- name: geolocate_ip
+  description: Get approximate location from IP address.
+  parameters:
+  - name: ip_address
+    type: string
+    required: true
+- name: calculate_distance
+  description: Calculate distance between two coordinates (Haversine).
+  parameters:
+  - name: lat1
+    type: number
+    required: true
+  - name: lon1
+    type: number
+    required: true
+  - name: lat2
+    type: number
+    required: true
+  - name: lon2
+    type: number
+    required: true
+- name: parse_coordinates
+  description: Parse location string into lat/lon coordinates.
+  parameters:
+  - name: location
+    type: string
+    required: true
+- name: timezone_from_coords
+  description: Determine timezone from coordinates.
+  parameters:
+  - name: latitude
+    type: number
+    required: true
+  - name: longitude
+    type: number
+    required: true

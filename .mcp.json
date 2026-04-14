@@ -1,20 +1,83 @@
 {
   "name": "geolocation-ai-mcp",
-  "description": "MEOK AI Labs \u2014 geolocation-ai-mcp",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/geolocation-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "geolocation-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)",
+  "version": "1.0.0",
   "tools": [
-    "run"
-  ],
-  "categories": [
-    "Location",
-    "Mapping"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "geolocate_ip",
+      "description": "Get approximate location from IP address.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "ip_address": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "ip_address"
+        ]
+      }
+    },
+    {
+      "name": "calculate_distance",
+      "description": "Calculate distance between two coordinates (Haversine).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "lat1": {
+            "type": "number"
+          },
+          "lon1": {
+            "type": "number"
+          },
+          "lat2": {
+            "type": "number"
+          },
+          "lon2": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "lat1",
+          "lon1",
+          "lat2",
+          "lon2"
+        ]
+      }
+    },
+    {
+      "name": "parse_coordinates",
+      "description": "Parse location string into lat/lon coordinates.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "location": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "location"
+        ]
+      }
+    },
+    {
+      "name": "timezone_from_coords",
+      "description": "Determine timezone from coordinates.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "latitude",
+          "longitude"
+        ]
+      }
+    }
+  ]
 }
