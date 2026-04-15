@@ -1,6 +1,6 @@
 {
   "name": "geolocation-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs \u2014 IP geolocation, distance calculation, and coordinate operations.",
+  "description": "Geolocation Ai automation via MCP. Includes geolocate ip, calculate distance, parse coordinates. By MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {

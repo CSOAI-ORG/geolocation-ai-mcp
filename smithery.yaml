@@ -1,10 +1,49 @@
 name: geolocation-ai-mcp
-description: "MEOK AI Labs \u2014 IP geolocation, distance calculation, and coordinate\
-  \ operations."
+description: Geolocation Ai automation via MCP. Includes geolocate ip, calculate distance,
+  parse coordinates. By MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: geolocate_ip
   description: Get approximate location from IP address.
+  parameters:
+  - name: ip_address
+    type: string
+    required: true
+- name: calculate_distance
+  description: Calculate distance between two coordinates using Haversine formula.
+  parameters:
+  - name: lat1
+    type: number
+    required: true
+  - name: lon1
+    type: number
+    required: true
+  - name: lat2
+    type: number
+    required: true
+  - name: lon2
+    type: number
+    required: true
+  - name: units
+    type: string
+    required: false
+- name: parse_coordinates
+  description: Parse location string into lat/lon coordinates.
+  parameters:
+  - name: location
+    type: string
+    required: true
+- name: timezone_from_coords
+  description: Determine timezone from coordinates.
+  parameters:
+  - name: latitude
+    type: number
+    required: true
+  - name: longitude
+    type: number
+    required: true
+- name: ip_to_coordinates
+  description: Convert IP address to approximate coordinates.
   parameters:
   - name: ip_address
     type: string
