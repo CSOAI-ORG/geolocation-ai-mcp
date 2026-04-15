@@ -1,6 +1,6 @@
 {
   "name": "geolocation-ai-mcp",
-  "description": "geolocation-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs \u2014 IP geolocation, distance calculation, and coordinate operations.",
   "version": "1.0.0",
   "tools": [
     {
