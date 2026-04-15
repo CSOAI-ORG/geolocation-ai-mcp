@@ -1,0 +1,56 @@
+{
+  "name": "geolocation-ai",
+  "description": "MEOK AI Labs \u2014 IP geolocation, distance calculation, timezone lookup, coordinate parsing.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/geolocation-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "geolocate_ip",
+      "description": "Get approximate location from IP address."
+    },
+    {
+      "name": "calculate_distance",
+      "description": "Calculate distance between two coordinates using Haversine formula."
+    },
+    {
+      "name": "parse_coordinates",
+      "description": "Parse location string into lat/lon coordinates."
+    },
+    {
+      "name": "timezone_from_coords",
+      "description": "Determine timezone from coordinates using brute-force offset matching."
+    },
+    {
+      "name": "ip_to_coordinates",
+      "description": "Convert IP address to approximate coordinates without full geolocation."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
