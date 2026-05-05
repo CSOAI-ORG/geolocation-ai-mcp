@@ -1,30 +1,38 @@
-# Geolocation AI MCP Server
+<div align="center">
 
-> **By [MEOK AI Labs](https://meok.ai)** — Sovereign AI tools for everyone.
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/geolocation-ai-mcp)](https://github.com/CSOAI-ORG/geolocation-ai-mcp/stargazers)
 
-IP geolocation, distance calculation (Haversine), timezone lookup, and coordinate parsing.
+# ugeolocationU aiU mcp
 
-## Tools
+**IP geolocation, distance calculation (Haversine), timezone lookup, and coordinate parsing.**
 
-| Tool | Description |
-|------|-------------|
-| `geolocate_ip` | Get approximate location from IP address |
-| `calculate_distance` | Calculate distance between two coordinates |
-| `parse_coordinates` | Parse location string to lat/lon |
-| `timezone_from_coords` | Determine timezone from coordinates |
-| `ip_to_coordinates` | Convert IP to lat/lon |
+[![npm version](https://img.shields.io/npm/v/@meok-ai/geolocation-ai-mcp)](https://www.npmjs.com/package/@meok-ai/geolocation-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
 
-## Quick Start
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/geolocation-ai-mcp/issues)
 
-```bash
-pip install mcp
-python server.py
-```
-
-## Part of MEOK AI Labs
-
-One of 250+ MCP servers. Browse all at [meok.ai](https://meok.ai)
+</div>
 
 ---
 
-**MEOK AI Labs** | [meok.ai](https://meok.ai) | nicholas@meok.ai
+## Installation
+
+```bash
+pip install geolocation-ai-mcp
+# or
+npm install -g @meok-ai/geolocation-ai-mcp
+```
+
+## Quick Start
+
+See the project repository for full documentation and examples.
+
+## Enterprise Support
+
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
+
+## License
+
+MIT © [CSOAI](https://csoai.org)
