@@ -91,6 +91,11 @@ def geolocate_ip(ip_address: str, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        ip_address (str): The ip address to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -151,6 +156,15 @@ def calculate_distance(
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        lat1 (float): The lat1 to analyze or process.
+        lon1 (float): The lon1 to analyze or process.
+        lat2 (float): The lat2 to analyze or process.
+        lon2 (float): The lon2 to analyze or process.
+        units (str): The units to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -213,6 +227,11 @@ def parse_coordinates(location: str, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        location (str): The location to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -286,6 +305,12 @@ def timezone_from_coords(latitude: float, longitude: float, api_key: str = "") -
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        latitude (float): The latitude to analyze or process.
+        longitude (float): The longitude to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -347,6 +372,11 @@ def ip_to_coordinates(ip_address: str, api_key: str = "") -> str:
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        ip_address (str): The ip address to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
