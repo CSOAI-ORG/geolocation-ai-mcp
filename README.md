@@ -1,3 +1,7 @@
+[![geolocation-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/geolocation-ai-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/geolocation-ai-mcp)
+[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
+[![PyPI](https://img.shields.io/pypi/v/geolocation-ai-mcp)](https://pypi.org/project/geolocation-ai-mcp/)
+
 [![geolocation-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/geolocation-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/geolocation-ai-mcp)
 
 <div align="center">
