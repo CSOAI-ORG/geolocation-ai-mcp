@@ -1,45 +1,59 @@
-[![geolocation-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/geolocation-ai-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/geolocation-ai-mcp)
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
-[![PyPI](https://img.shields.io/pypi/v/geolocation-ai-mcp)](https://pypi.org/project/geolocation-ai-mcp/)
-
-[![geolocation-ai-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/geolocation-ai-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/geolocation-ai-mcp)
-
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/geolocation-ai-mcp)](https://github.com/CSOAI-ORG/geolocation-ai-mcp/stargazers)
+# Geolocation Ai MCP
 
-# ugeolocationU aiU mcp
+**MCP server for geolocation ai mcp operations**
 
-**IP geolocation, distance calculation (Haversine), timezone lookup, and coordinate parsing.**
-
-[![npm version](https://img.shields.io/npm/v/@meok-ai/geolocation-ai-mcp)](https://www.npmjs.com/package/@meok-ai/geolocation-ai-mcp)
+[![PyPI](https://img.shields.io/pypi/v/meok-geolocation-ai-mcp)](https://pypi.org/project/meok-geolocation-ai-mcp/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
-
-[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/geolocation-ai-mcp/issues)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-MCP_Server-purple)](https://meok.ai)
 
 </div>
 
----
+## Overview
+
+Geolocation Ai MCP provides AI-powered tools via the Model Context Protocol (MCP).
+
+## Tools
+
+| Tool | Description |
+|------|-------------|
+| `geolocate_ip` | Get approximate location from IP address. |
+| `calculate_distance` | Calculate distance between two coordinates using Haversine formula. |
+| `parse_coordinates` | Parse location string into lat/lon coordinates. |
+| `timezone_from_coords` | Determine timezone from coordinates using brute-force offset matching. |
+| `ip_to_coordinates` | Convert IP address to approximate coordinates without full geolocation. |
 
 ## Installation
 
 ```bash
-pip install geolocation-ai-mcp
-# or
-npm install -g @meok-ai/geolocation-ai-mcp
+pip install meok-geolocation-ai-mcp
 ```
 
-## Quick Start
+## Usage with Claude Desktop
 
-See the project repository for full documentation and examples.
+Add to your Claude Desktop MCP config (`claude_desktop_config.json`):
 
-## Enterprise Support
+```json
+{
+  "mcpServers": {
+    "geolocation-ai-mcp": {
+      "command": "python",
+      "args": ["-m", "meok_geolocation_ai_mcp.server"]
+    }
+  }
+}
+```
 
-- 📧 nicholas@csoai.org
-- 🌐 [CSOAI.org](https://csoai.org)
+## Usage with FastMCP
+
+```python
+from mcp.server.fastmcp import FastMCP
+
+# This server exposes 5 tool(s) via MCP
+# See server.py for full implementation
+```
 
 ## License
 
-MIT © [CSOAI](https://csoai.org)
-<!-- mcp-name: io.github.CSOAI-ORG/geolocation-ai-mcp -->
+MIT © [MEOK AI Labs](https://meok.ai)
