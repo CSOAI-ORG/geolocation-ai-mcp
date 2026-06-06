@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Geolocation AI MCP — MEOK AI Labs. IP geolocation, distance calculation, timezone lookup."""
+"""
+Buy Pro: https://www.csoai.org/checkout
+Geolocation AI MCP — MEOK AI Labs. IP geolocation, distance calculation, timezone lookup."""
 
 import sys, os
 
-sys.path.insert(0, os.path.expanduser("~/clawd/meok-labs-engine/shared"))
 from auth_middleware import check_access
 
 import json, os, re, hashlib, math
@@ -113,7 +114,7 @@ def geolocate_ip(ip_address: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -182,7 +183,7 @@ def calculate_distance(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -249,7 +250,7 @@ def parse_coordinates(location: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -328,7 +329,7 @@ def timezone_from_coords(latitude: float, longitude: float, api_key: str = "") -
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -394,7 +395,7 @@ def ip_to_coordinates(ip_address: str, api_key: str = "") -> str:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://councilof.ai"}
 
     if err := _rl():
         return err
@@ -409,5 +410,8 @@ def ip_to_coordinates(ip_address: str, api_key: str = "") -> str:
     return {"ip": ip, "lat": None, "lon": None, "note": "IP not in cache"}
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
