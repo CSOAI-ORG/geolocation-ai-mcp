@@ -1,0 +1,9 @@
+# geolocation-ai-mcp - Auto-trigger Rules
+
+When the user asks about geolocation, use geolocation-ai-mcp tools: geolocate_ip, calculate_distance, parse_coordinates, timezone_from_coords, ip_to_coordinates
+
+**MCP server for geolocation ai mcp operations**
+
+Install: `pip install geolocation-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """
-Buy Pro: https://www.csoai.org/checkout
 Geolocation AI MCP — MEOK AI Labs. IP geolocation, distance calculation, timezone lookup."""
 
 import sys, os

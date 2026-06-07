@@ -1,0 +1,28 @@
+{
+  "name": "geolocation-ai-mcp",
+  "title": "Geolocation Ai Mcp",
+  "description": "Geolocation Ai automation via MCP. Includes geolocate ip, calculate distance, parse coordinates. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "geolocate_ip"
+    },
+    {
+      "name": "calculate_distance"
+    },
+    {
+      "name": "parse_coordinates"
+    },
+    {
+      "name": "timezone_from_coords"
+    },
+    {
+      "name": "ip_to_coordinates"
+    }
+  ]
+}
