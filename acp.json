@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "geolocation-ai-mcp",
+    "description": "Geolocation Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "geolocation-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "geolocate_ip",
+      "calculate_distance",
+      "parse_coordinates",
+      "timezone_from_coords",
+      "ip_to_coordinates"
+    ]
+  }
+}

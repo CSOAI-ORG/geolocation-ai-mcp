@@ -1,0 +1,68 @@
+{
+  "name": "geolocation-ai-mcp",
+  "description": "Geolocation Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/geolocation-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "geolocate_ip",
+      "name": "Geolocate Ip",
+      "description": "geolocate_ip via geolocation-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "calculate_distance",
+      "name": "Calculate Distance",
+      "description": "calculate_distance via geolocation-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "parse_coordinates",
+      "name": "Parse Coordinates",
+      "description": "parse_coordinates via geolocation-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "timezone_from_coords",
+      "name": "Timezone From Coords",
+      "description": "timezone_from_coords via geolocation-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "ip_to_coordinates",
+      "name": "Ip To Coordinates",
+      "description": "ip_to_coordinates via geolocation-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
