@@ -1,4 +1,4 @@
-<!-- mcp-name: CSOAI-ORG/geolocation-ai-mcp -->
+<!-- mcp-name: io.github.CSOAI-ORG/geolocation-ai-mcp -->
 [![MCP Scorecard: 74/100](https://img.shields.io/badge/proofof.ai-74%2F100-5b21b6)](https://proofof.ai/scorecard/geolocation-ai-mcp.html)
 
 # Geolocation Ai MCP
@@ -113,3 +113,28 @@ Free tier: 10 calls/day per MCP. Pro tier (£79/mo): unlimited + cryptographical
 
 <!-- BUY-LADDER:END -->
 
+
+
+## Configuration
+
+Add to your `claude_desktop_config.json` (Claude Desktop) or your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "geolocation-ai-mcp": {
+      "command": "uvx",
+      "args": ["geolocation-ai-mcp"]
+    }
+  }
+}
+```
+
+Or: `pip install geolocation-ai-mcp` then run the `geolocation-ai-mcp` command (stdio transport).
+
+## Examples
+
+Once configured, ask your assistant, for example:
+- "Use `geolocate_ip` to …"
+- "Use `calculate_distance` to …"
+- "Use `parse_coordinates` to …"
